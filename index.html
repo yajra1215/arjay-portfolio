@@ -20,6 +20,7 @@ h1{font-size:clamp(44px,7vw,74px);line-height:1.02;letter-spacing:-3px;margin:18
 .profile{background:linear-gradient(145deg,#132744,#0d1728);border:1px solid var(--line);border-radius:22px;padding:34px;text-align:center;box-shadow:0 25px 70px #00000045}
 .avatar{width:120px;height:120px;border-radius:50%;margin:0 auto 18px;display:grid;place-items:center;background:linear-gradient(135deg,#5ca6ff,#917fff);font-size:36px;font-weight:900}.profile small{color:var(--muted)}
 section{padding:70px 0;border-top:1px solid var(--line)}h2{font-size:32px;margin:0 0 8px}.lead{color:var(--muted);margin:0 0 28px}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:linear-gradient(145deg,#0e1a2b,#0b1626);border:1px solid var(--line);border-radius:16px;padding:23px}.card h3{margin:0 0 8px;font-size:18px}.card p,.card li{color:var(--muted);font-size:14px}.card ul{padding-left:18px}
 .skills{display:flex;flex-wrap:wrap;gap:10px}.skill{padding:8px 12px;border:1px solid #2c4160;background:#0d192a;border-radius:999px;color:#dbe6ff;font-size:13px}
 .timeline{border-left:2px solid #2e4362;padding-left:24px}.item{position:relative;margin-bottom:28px}.item:before{content:"";position:absolute;left:-31px;top:9px;width:10px;height:10px;border-radius:50%;background:var(--primary)}.meta{font-size:13px;color:#8294b0}
@@ -27,7 +28,7 @@ section{padding:70px 0;border-top:1px solid var(--line)}h2{font-size:32px;margin
 .statline{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}.stat{padding:18px;border:1px solid var(--line);border-radius:14px;background:#0c1728}.stat strong{display:block;font-size:20px}.stat span{font-size:12px;color:var(--muted)}
 .cta{text-align:center}.cta p{max-width:650px;margin:10px auto 25px;color:var(--muted)}
 footer{text-align:center;border-top:1px solid var(--line);padding:24px;color:#71809a;font-size:13px}
-@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:58px}.grid3,.statline{grid-template-columns:1fr}.links{display:none}h1{letter-spacing:-2px}}
+@media(max-width:760px){.hero,.grid2{grid-template-columns:1fr;padding-top:58px}.grid3,.statline{grid-template-columns:1fr}.links{display:none}h1{letter-spacing:-2px}}
 </style>
 </head>
 <body>
@@ -114,8 +115,8 @@ footer{text-align:center;border-top:1px solid var(--line);padding:24px;color:#71
 
 <section id="videos"><div class="container">
   <h2>Video Works & Walkthroughs</h2>
-  <p class="lead">Watch quick demo walkthroughs of the automation workflows and video projects I've built.</p>
-  <div class="grid3">
+  <p class="lead">Watch quick demo walkthroughs of the automation workflows I've built.</p>
+  <div class="grid2">
     <!-- Video 1: Lead Generation -->
     <div class="card">
       <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;margin-bottom:12px;background:#000;">
@@ -131,14 +132,6 @@ footer{text-align:center;border-top:1px solid var(--line);padding:24px;color:#71
       </div>
       <h3>Automated Dental Patient Inquiry & Appointment Router</h3>
       <p>A step-by-step video breakdown of how the n8n workflow handles patient messages and routes them seamlessly.</p>
-    </div>
-    <!-- Video 3: CapCut / Short Form Video Editing -->
-    <div class="card">
-      <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;margin-bottom:12px;background:#000;">
-        <iframe src="https://www.loom.com/embed/d3220025daee4a2ab2c920030dbc935b" title="Short Form Video" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allowfullscreen></iframe>
-      </div>
-      <h3>Creative & Short-Form Video Editing</h3>
-      <p>Sample reel highlighting CapCut editing and social media content creation capabilities.</p>
     </div>
   </div>
 </div></section>
